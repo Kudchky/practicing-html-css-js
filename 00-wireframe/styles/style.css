@@ -1,0 +1,23 @@
+*,
+*:after,
+*:before {
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    list-style-type: none;
+}
+header {
+  background-color: red;
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+nav {
+  background-color: rgb(151, 151, 241);
+  
+}
