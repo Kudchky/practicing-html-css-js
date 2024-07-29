@@ -86,13 +86,27 @@ footer {
   line-height: 50px;
 }
 
-@media (min-width: 426px) {
+@media (min-width: 447px) {
   #container {
     width: 100%;
   }
+
+  .content {
+    width: 60%;
+    min-height: 700px;
+    padding: 20px;
+  }
+
+  aside {
+    width: 40%;
+    min-height: 700px;
+    padding: 5px;
+  }
 }
 
-@media (min-width: 768px) {
+
+
+@media (min-width: 767px) {
   #container {
     display: flex;
     flex-direction: column;
