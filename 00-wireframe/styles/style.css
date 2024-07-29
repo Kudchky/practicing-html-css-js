@@ -25,11 +25,20 @@ header {
   text-align: center;
   line-height: 100px;
   color: white;
+  border: 1px solid black;
+  border-bottom: none;
+}
+
+nav {
+  background-color: lightblue;
+  height: 50px;
+  border: 1px solid black;
 }
 
 nav ul li {
   float: left;
   margin: 10px;
+  line-height: 30px;
 }
 
 .clearfix {
