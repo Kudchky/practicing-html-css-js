@@ -48,13 +48,77 @@ nav ul li {
 .content {
   float: left;
   background-color: green;
-  min-height: 500px;
   width: 80%;
+  min-height: 700px;
+  padding: 40px;
+}
+
+.article {
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.article:first-child {
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.article h2 {
+  font-size: 25px;
 }
 
 aside {
   float: left;
   background-color: orange;
-  min-height: 500px;
+  min-height: 700px;
   width: 20%;
+  padding: 10px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+@media (min-width: 426px) {
+  #container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .content {
+    width: 70%;
+    min-height: 700px;
+    padding: 40px
+  }
+
+  aside {
+    width: 30%;
+    min-height: 700px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #container {
+    width: 70%;
+  }
 }
