@@ -8,6 +8,12 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  height: 600px;
+  justify-content: center;
+  align-content: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .box {
@@ -16,9 +22,21 @@ body {
   color: black;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   text-align: center;
-  line-height: 120px;
+  line-height: 200px;
   margin: 5px;
+}
+
+.box1 {
+  background-color: lightblue;
+}
+
+.box2 {
+  background-color: lightcoral;
+}
+
+.box3 {
+  background-color: lightgreen;
 }
