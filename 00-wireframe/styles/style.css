@@ -104,8 +104,6 @@ footer {
   }
 }
 
-
-
 @media (min-width: 767px) {
   #container {
     display: flex;
