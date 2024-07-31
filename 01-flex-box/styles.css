@@ -31,12 +31,19 @@ body {
 
 .box1 {
   background-color: lightblue;
+  order: 3;
+  flex-grow: 1;
 }
 
 .box2 {
   background-color: lightcoral;
+  order: 2;
+  flex-grow: 1;
+  flex-basis: 50%;
 }
 
 .box3 {
   background-color: lightgreen;
+  order: 1;
+  flex-grow: 1;
 }
