@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>BEM en Css</title>
+  </head>
+  <body>
+    <h1>Metodologia BEM en Css</h1>
+    <section class="cards">
+      <article class="cards__card"> <!-- cards__card es su selector -->
+        <h3 class="card__title">Titulo de Card</h3> <!-- Aca cual seria el bloque del elemento h3, no seria card__cards, seria muy largo. Entonces seria card y luego le ponemos su elemento title. -->
+        <p class="card__content">
+          <spam class="card__resaltado">Contenido de card</spam>
+        </p>
+        <a href="#" class="card__link">Enlace card</a>
+      </article>
+      <article class="cards__card">
+        <h3 class="card__title">Titulo de Card</h3>
+        <p class="card__content">
+          <span class="card__resaltado">Contenido de card</span>
+        </p>
+        <a href="#" class="card__link card__link--green">Enlace card</a>
+      </article>
+      <article class="cards__card">
+        <h3 class="card__title">Titulo de Card</h3>
+        <p class="card__content">Contenido de card</p>
+        <a href="#" class="card__link">Enlace card</a>
+      </article>
+      <article class="cards__card">
+        <h3 class="card__title">Titulo de Card</h3>
+        <p class="card__content">Contenido de card</p>
+        <a href="#" class="card__link card__link--green">Enlace card</a>
+      </article>
+    </section>
+  </body>
+</html>

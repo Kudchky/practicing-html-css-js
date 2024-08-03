@@ -1,0 +1,25 @@
+.cards {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.cards__card {
+  border: 1px solid orange;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: lightsalmon;
+}
+
+.card__title {
+  color: white;
+}
+
+.card__link {
+  padding: 5px;
+  text-decoration: none;
+}
+
+.card__link--green {
+  background-color: greenyellow;
+}
