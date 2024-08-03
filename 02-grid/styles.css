@@ -16,7 +16,14 @@ body {
 .grid-layout {
   height: 650px;
   display: grid;
-  grid-template-columns: 70% auto;
+  /* grid-template-columns: 70% auto;
+  grid-template-rows: 20% 10% 60% auto; */
+  grid-template-areas:
+    "header header"
+    "menu menu"
+    "content aside"
+    "footer footer"; /* esto es para indicar que tenga 2 columnas */
+  grid-template-columns: 75% 25%;
   grid-template-rows: 20% 10% 60% auto;
   background-color: lightgreen;
   border: 1px solid black;
@@ -32,13 +39,13 @@ body {
 }
 
 .box1 {
+  grid-area: header;
   background-color: lightblue;
-  grid-column: 1 / span 2;
 }
 
 .box2 {
   background-color: lightcoral;
-  grid-column: 1 / span 2;
+  grid-area: menu;
 }
 
 .box3 {
@@ -51,5 +58,5 @@ body {
 
 .box5 {
   background-color: lightslategray;
-  grid-column: 1 / span 2;
+  grid-area:footer;
 }
