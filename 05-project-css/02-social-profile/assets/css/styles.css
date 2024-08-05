@@ -1,0 +1,15 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Montserrat";
+    font-size: 1.6rem;
+    border: 1px solid orange;
+}
+
+.layout {
+    width: 100%;
+    border: 1px solid black;
+    min-height: 100%;
+}

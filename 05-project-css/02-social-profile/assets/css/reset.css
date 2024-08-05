@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     vertical-align: baseline;
@@ -6,46 +6,56 @@
 
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
-    min-height: 100vh;
+body {
+    height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
 }
 
-ul, ol{
+ul,
+ol {
     list-style: none;
 }
 
-a{
-    display:block;
+a {
+    display: block;
     text-decoration: none;
     font-family: inherit;
     font-size: inherit;
     color: inherit;
 }
 
-p a{
+p a {
     display: inline;
 }
 
-img, video, iframe, picture, figure{
-    display:block;
+img,
+video,
+iframe,
+picture,
+figure {
+    display: block;
     max-width: 100%;
 }
 
-form, input, select, textarea, button, label{
-    display:block;
+form,
+input,
+select,
+textarea,
+button,
+label {
+    display: block;
     font-family: inherit;
     font-size: inherit;
     color: inherit;
