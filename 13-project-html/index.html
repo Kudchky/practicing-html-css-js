@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form part 2</title>
+    </head>
+    <body>
+        <form action="">
+            <div>
+                <label for="search">Search</label>
+                <input type="search" name="search" id="search" />
+            </div>
+            <br />
+            <div>
+                <label for="telphone">Telephone</label>
+                <input type="tel" name="telephone" id="telephone" />
+            </div>
+            <br />
+            <div>
+                <label for="hour">Hour</label>
+                <input type="time" name="hour" id="hour" />
+            </div>
+            <br />
+            <div>
+                <label for="url">Url</label>
+                <input type="url" name="url" id="url" />
+            </div>
+            <br />
+            <div>
+                <label for="bar">Progress bar</label>
+                <progress max="100" value="24"></progress>
+            </div>
+            <br />
+            <div>
+                <label for="car">Car list</label>
+                <input list="car" name="car" />
+                <datalist id="car">
+                    <option value="audi">Audi</option>
+                    <option value="mercedes"></option>
+                    <option value="bwm"></option>
+                    <option value="toyota"></option>
+                </datalist>
+            </div>
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
