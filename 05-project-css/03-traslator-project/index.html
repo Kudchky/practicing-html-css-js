@@ -3,9 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./enunciation/assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
-        <link rel="stylesheet" href="./assets/css/reset.css">
-        <link rel="stylesheet" href="./assets/css/styles.css">
+        <link
+            rel="stylesheet"
+            href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
         <title>Project Traduction</title>
     </head>
     <body>
@@ -17,66 +20,89 @@
                 </div>
                 <div class="header__bottom">
                     <form class="header__form" action="#">
-                        <div class="header__container-search">
-                            <input type="text" placeholder="Enter a word" />
-                            <i></i>
+                        <div class="header__search">
+                            <input
+                                type="search"
+                                class="search__input"
+                                name="search"
+                                placeholder="Enter a word"
+                            />
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
-                        <select name="languages" id="">
-                            <option value="spa">Spain</option>
-                            <option value="ger">German</option>
-                            <option value="eng">English</option>
-                            <option value="fra">French</option>
+                        <select name="languages" class="header__languages">
+                            <option class="languages__option" value="spa">
+                                Spain
+                            </option>
+                            <option class="languages__option" value="ger">
+                                German
+                            </option>
+                            <option class="languages__option" value="eng">
+                                English
+                            </option>
+                            <option class="languages__option" value="fra">
+                                French
+                            </option>
                         </select>
                     </form>
                 </div>
             </header>
             <main class="layout__main">
                 <div class="main__result">
-                    <h1 class="main__word">Computer</h1>
-                    <i></i>
+                    <h1 class="result__word">Computer</h1>
+                    <a href="#" class="result__btn"
+                        ><i class="fa-solid fa-play"></i
+                    ></a>
                 </div>
-                <section class="main__traduction">
-                    <h3 class="main__title">Traduction</h3>
-                    <ul>
-                        <li>
-                            <p class="main__content">
-                                <span>Computer:</span> An electronic machine
-                                capable of storing information and automatically
+                <section class="main__traductions">
+                    <h3 class="traductions__title"><span>Traduction</span></h3>
+                    <ul class="traductions__list">
+                        <li class="list__item">
+                            <p class="list__traduction">
+                                <b>Computer:</b> An electronic machine capable
+                                of storing information and automatically
                                 processing it through mathematical and logical
                                 operations controlled by software.
                             </p>
                         </li>
-                        <li>
-                            <p class="main__content">
-                                <span>Compatible Computer:</span> A computer
-                                capable of running the same programs as other
-                                computers of the same type.
+                        <li class="list__item">
+                            <p class="list__traduction">
+                                <b>Compatible Computer:</b> A computer capable
+                                of running the same programs as other computers
+                                of the same type.
                             </p>
                         </li>
-                        <li>
-                            <p class="main__content">
-                                <span>Personal Computer:</span> A desktop
-                                computer that includes a central unit, keyboard,
-                                monitor, and one or more disk drives, which can
-                                operate without being connected to a computer
-                                network.
+                        <li class="list__item">
+                            <p class="list__traduction">
+                                <b>Personal Computer:</b> A desktop computer
+                                that includes a central unit, keyboard, monitor,
+                                and one or more disk drives, which can operate
+                                without being connected to a computer network.
                             </p>
                         </li>
-                        <li>
-                            <p class="main__content">
-                                <span>Portable Computer:</span> A personal
-                                computer with a weight and size so reduced that
-                                it can be comfortably carried from one place to
-                                another, as if it were a briefcase; it includes
-                                a built-in battery that allows for a certain
+                        <li class="list__item">
+                            <p class="list__traduction">
+                                <b>Portable Computer:</b> A personal computer
+                                with a weight and size so reduced that it can be
+                                comfortably carried from one place to another,
+                                as if it were a briefcase; it includes a
+                                built-in battery that allows for a certain
                                 degree of autonomous operation.
                             </p>
                         </li>
                     </ul>
-                    <p class="main__synonyms">Synonyms: Computer Processor Computer</p>
+                    <div class="traductions__syns">
+                        <h4 class="syns__title">Synonyms</h4>
+                        <span class="syns__resutl"
+                            >Computer Processor Computer</span
+                        >
+                    </div>
                 </section>
             </main>
-            <footer class="layout__footer">All right reserved to Pol Castillo &copy;</footer>
+            <footer class="layout__footer">
+                <p class="footer__text">
+                    All right reserved to Pol Castillo &copy;
+                </p>
+            </footer>
         </div>
     </body>
 </html>
