@@ -1,0 +1,62 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: rgb(242, 248, 252);
+    font-family: sans-serif;
+}
+
+.layout {
+    width: 60%;
+    height: 99.8%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    border: 1px solid black;
+}
+
+.layout__header {
+    border: 1px solid orange;
+    padding: 2rem 0;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(61, 117, 248);
+    margin-bottom: 2rem;
+}
+
+.header__top i {
+    font-size: 2.5rem;
+}
+
+.header__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+.header__languages {
+    width: 30%;
+}
+
+.header__languages i {
+    width: 20%;
+    margin: 
+}
+.search__input {
+    width: 80%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    background-color:rgb(216, 218, 220);
+}
