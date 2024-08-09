@@ -79,6 +79,10 @@ body {
     font-weight: bold;
 }
 
+.layout__main {
+    margin-bottom: 4rem;
+}
+
 .main__result {
     display: flex;
     justify-content: space-between;
@@ -104,4 +108,52 @@ body {
 .result__btn i {
     color: white;
     font-size: 2rem;
+}
+
+.main__traductions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.traductions__title {
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+
+.traductions__list {
+    margin-bottom: 3rem;
+    list-style:disc;
+    margin-left: 2rem;
+}
+
+.list__item {
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.list__traduction b{
+    color: rgb(14, 152, 226)
+}
+
+.traductions__syns {
+    display: flex;
+    gap: 2rem;
+}
+
+.syns__title {
+    color: grey;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.syns__result {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(14, 152, 226);
+}
+
+.footer__text {
+    color: gray;
+    font-size: 1.4rem;
 }
