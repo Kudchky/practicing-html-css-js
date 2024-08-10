@@ -1,0 +1,150 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.layout {
+    width: 100%;
+    height: 99.4%;
+    background-color: #575757;
+    display: flex;
+    justify-content: center;
+}
+
+.layout__main {
+    width: 45rem;
+    height: 55rem;
+    background-color: #575757;
+    margin-top: 15rem;
+}
+
+.main__title {
+    color: rgb(211, 204, 204);
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.main__form {
+    margin-top: 2rem;
+}
+
+.form__email {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.email__input {
+    width: 90%;
+    padding: 1rem;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    font-weight: 600;
+    outline: none;
+}
+
+.email__input::placeholder {
+    color: #cecece;
+}
+
+.form__email i {
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+    color: #6087ff;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form__email i:hover {
+    color: #3753a7;
+}
+
+.form__features {
+    background-color: white;
+    margin-top: 2rem;
+    border-radius: 5px 5px 0 0;
+    padding: 2rem;
+}
+
+.features__length {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.3rem;
+}
+
+.length__title {
+    font-size: 1.3rem;
+    color: #575757;
+    font-weight: 700;
+}
+
+.length__number {
+    color: #6087ff;
+    font-weight: 700;
+}
+
+progress {
+    width: 100%;
+}
+
+.features__checks {
+    margin-top: 1.5rem;
+}
+
+.checkes__label {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.4rem;
+    color: #575757;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+
+.form__btns {
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem
+}
+
+.form__btns a {
+    width: 100%;
+    text-align: center;
+    padding: 1.3rem;
+    border-radius: 5px;
+}
+
+.btns__custom {
+    background-color: #575757;
+    color: #cecece;
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition: all 300ms ease-in-out;
+}
+
+.btns__create {
+    background-color: #6087ff;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: bold;
+    transition: all 300ms ease-in-out;
+}
+
+.btns__custom:hover {
+    background-color: orange;
+    color:#575757;
+}
+
+.btns__create:hover {
+    background-color: green;
+}
