@@ -190,7 +190,12 @@ body {
 .syns__result {
     font-size: 1.5rem;
     font-weight: bold;
-    color: rgb(14, 152, 226);
+    color: #2761da;
+}
+
+.layout__footer {
+    border-top: 1px solid #e4e0e0;
+    padding: 2rem;
 }
 
 .footer__text {
