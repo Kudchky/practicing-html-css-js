@@ -19,10 +19,10 @@
                 </section>
                 <section class="form__features">
                     <div class="features__length">
-                        <p class="length__title">Length</p>
-                        <p class="length__number">4</p>
+                        <span class="length__title">Length</span>
+                        <span class="length__number">4</span>
                     </div>
-                    <progress max="100" value="4"></progress>
+                    <input class="features__range" type="range" max="100" value="4">
                     <div class="features__checks">
 
                         <label class="checkes__label" for="letters"><input type="checkbox" class="checks__check" name="features" id="letters"> With letters</label>
@@ -35,8 +35,8 @@
                     </div>
                 </section>
                 <section class="form__btns">
-                    <a class="btns__custom" href="#">Custom</a>
-                    <a class="btns__create" href="#">Create</a>
+                    <input type="text" class="btns__custom" href="#" placeholder="Custom">
+                    <input type="submit" class="btns__create" href="#">
                 </section>
             </form>
         </main>
