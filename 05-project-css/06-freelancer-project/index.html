@@ -1,12 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Freelancer Project</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <title>Freelancer Project</title>
+    </head>
+    <body>
+        <div class="layout">
+            <header class="layout__header">
+                <h1 class="header__title">Pol Castillo Freelancer</h1>
+            </header>
+            <nav class="layout__nav">
+                <a href="" class="nav__link">Home</a>
+                <a href="" class="nav__link">About us</a>
+                <a href="" class="nav__link">Customers</a>
+                <a href="" class="nav__link">Contacts</a>
+            </nav>
+            <section class="layout__banner">
+                <h2 class="banner__title">
+                    Freelance Web Design and Development
+                </h2>
+                <div class="banner__location">
+                    <p class="banner__text">Trujillo, Peru</p>
+                </div>
+                <a class="banner__btn" href="#">Contact</a>
+            </section>
+            <!--End Banner-->
+            <main class="layout__main">
+                <section class="main__services">
+                    <h2 class="services__title">My Services</h2>
+                    <div class="services__container">
+                        <article class="services__service">
+                            <h3 class="service__title">Web Design</h3>
 
-</body>
+                            <p class="service__text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Qui quis nam deserunt enim,
+                                commodi maiores perferendis quaerat esse
+                                voluptates modi facere voluptate repellendus
+                                officiis aperiam obcaecati minima molestias
+                                officia eligendi.
+                            </p>
+                        </article>
+                        <article class="services__service">
+                            <h3 class="service__title">Mobile Applications</h3>
+
+                            <p class="service__text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Qui quis nam deserunt enim,
+                                commodi maiores perferendis quaerat esse
+                                voluptates modi facere voluptate repellendus
+                                officiis aperiam obcaecati minima molestias
+                                officia eligendi.
+                            </p>
+                        </article>
+                        <article class="services__service">
+                            <h3 class="service__title">E-Commerce</h3>
+
+                            <p class="service__text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Qui quis nam deserunt enim,
+                                commodi maiores perferendis quaerat esse
+                                voluptates modi facere voluptate repellendus
+                                officiis aperiam obcaecati minima molestias
+                                officia eligendi.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+                <!--End Services-->
+                <section class="main__contact">
+                    <h2 class="contact__title">Contact</h2>
+                    <form class="contact__form" action="#">
+                        <legend class="form__legend">
+                            Contact us by filling out all the fields
+                        </legend>
+                        <div class="form__fields">
+                            <div class="form__field">
+                                <label for="name">Name</label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    placeholder="Enter your name"
+                                />
+                            </div>
+                            <div class="form__field">
+                                <label for="telephone">Telephone</label>
+                                <input
+                                    type="tel"
+                                    name="telephone"
+                                    id="telephone"
+                                    placeholder="Enter your telephone"
+                                />
+                            </div>
+                            <div class="form__field">
+                                <label for="email">Email</label>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    placeholder="Enter your email"
+                                />
+                            </div>
+                            <div class="form__field">
+                                <label for="messages">Messages</label>
+                                <textarea
+                                    name="messages"
+                                    id="messages"
+                                ></textarea>
+                            </div>
+                        </div>
+                        <!--End fields-->
+                        <input class="form__btn" type="submit" />
+                    </form>
+                </section>
+            </main>
+            <footer class="layout__footer">
+                <span class="footer__text"
+                    >All right reserved Paul Castillo &copy;</span
+                >
+            </footer>
+        </div>
+    </body>
 </html>
