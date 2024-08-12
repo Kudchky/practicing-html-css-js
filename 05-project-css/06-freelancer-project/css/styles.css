@@ -38,6 +38,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav__links {
@@ -49,16 +52,20 @@ body {
 .nav__link {
     text-align: center;
     color: var(--letter-color);
-    padding: 1rem 0;
     font-size: 1.4rem;
     font-weight: 700;
     opacity: 0.8;
+    padding: 0.5rem 0;
     transition: all 300ms ease-in-out;
 }
 
 @media (min-width: 768px) {
+    .layout__nav {
+        height: 4.5rem;
+    }
     .nav__links {
         width: 60%;
+        height: 100%;
         flex-direction: row;
         justify-content: space-between;
         gap: 5%;
@@ -66,6 +73,10 @@ body {
 
     .nav__link {
         width: 21.25%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -77,10 +88,11 @@ body {
 
 .layout__banner {
     width: 100%;
-    height: 45rem;
+    height: 40rem;
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
+    background-position: center;
     position: relative;
 }
 
@@ -96,10 +108,11 @@ body {
 }
 
 .banner__title {
-    font-size: 3.5rem;
-    font-weight: 800;
+    font-size: 3rem;
+    font-weight: 900;
     color: var(--letter-color);
     padding-bottom: 5rem;
+    text-align: center;
 }
 
 .banner__location {
