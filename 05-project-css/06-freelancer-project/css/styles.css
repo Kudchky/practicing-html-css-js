@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
     --strong-color: #0a0a23;
@@ -17,7 +17,7 @@ body {
 
 .layout {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     background-color: var(--light-color);
 }
 
@@ -41,15 +41,12 @@ body {
 }
 
 .nav__links {
-    width: 60%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5%;
+    flex-direction: column;
 }
 
 .nav__link {
-    width: 21.25%;
     text-align: center;
     color: var(--letter-color);
     padding: 1rem 0;
@@ -59,8 +56,72 @@ body {
     transition: all 300ms ease-in-out;
 }
 
+@media (min-width: 768px) {
+    .nav__links {
+        width: 60%;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5%;
+    }
+
+    .nav__link {
+        width: 21.25%;
+    }
+}
+
 .nav__link:hover {
     background-color: var(--btn-color);
     border-radius: 2px;
-    color: var(--strong-color)
+    color: var(--strong-color);
+}
+
+.layout__banner {
+    width: 100%;
+    height: 45rem;
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+}
+
+.banner__container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(0 0 0 / 70%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner__title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--letter-color);
+    padding-bottom: 5rem;
+}
+
+.banner__location {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 4rem;
+}
+
+.banner__text {
+    color: var(--letter-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.banner__btn {
+    color: var(--letter-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+    background-color: var(--btn-color);
+    padding: 0.5rem 6rem;
+    text-align: center;
+    border-radius: 5px;
 }
