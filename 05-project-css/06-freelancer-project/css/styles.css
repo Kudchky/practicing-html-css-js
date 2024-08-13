@@ -3,6 +3,7 @@
 :root {
     --strong-color: #0a0a23;
     --light-color: #1b1b32;
+    --light-color-grey: #3b3b4f;
     --btn-color: #fecc4c;
     --letter-color: #f5f6f7;
 }
@@ -137,4 +138,97 @@ body {
     padding: 0.5rem 6rem;
     text-align: center;
     border-radius: 5px;
+}
+
+.layout__main {
+    width: 60%;
+    margin: 0 auto;
+    background-color: var(--light-color-grey);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 10px 5px 0px rgba(10, 10, 35, 1);
+}
+
+.main__services {
+    width: 100%;
+    padding-top: 3rem;
+}
+
+.services__title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--letter-color);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.services__container {
+    width: 100%;
+    display: flex;
+}
+
+.services__service {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service__title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--btn-color);
+    margin-bottom: 4rem;
+}
+
+.service__icons {
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    background-color: var(--btn-color);
+    border-radius: 100px;
+}
+
+.service__text {
+    padding: 0 3rem;
+    text-align: justify;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--letter-color);
+    opacity: 0.9;
+}
+
+.main__contact {
+    width: 100%;
+    margin: 7rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__title {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+    color: var(--letter-color);
+}
+
+.contact__form {
+    background-color: var(--strong-color);
+    margin-bottom: 4rem;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+}
+
+.form__legend {
+    font-weight: 800;
+    color:var(--btn-color);
+    margin-bottom: 2rem;
+}
+
+.form__field {
+    display: flex;
+    
 }
