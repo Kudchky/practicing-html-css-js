@@ -16,8 +16,8 @@ html {
 }
 
 /*Scroll Snap*/
-.main-navigation,
-.services,
+.title,
+.container,
 .form {
     scroll-snap-align: center;
     scroll-snap-stop: always;
