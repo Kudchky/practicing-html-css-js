@@ -72,12 +72,12 @@ h3 {
     transition: all 300ms ease-in-out;
 }
 
-.main__cards .cards__card:first-child {
+.cards__card:first-child {
     border-radius: 1.5rem 0 0 1.5rem;
     margin-right: 1.3rem;
 }
 
-.main__cards .cards__card:last-child {
+.cards__card:last-child {
     border-radius: 0 1.5rem 1.5rem 0;
     margin-left: 1.3rem;
 }
@@ -145,7 +145,7 @@ h3 {
 .cards__card--zoom .card__btn {
     color: var(--card-pick);
     background-color: var(--white);
-    transition: all 300ms ease-in-out;
+    transition: all 300ms linear;
 }
 
 .cards__card--zoom .card__btn:hover {
