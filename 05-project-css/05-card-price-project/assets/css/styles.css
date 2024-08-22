@@ -58,8 +58,6 @@ h3 {
 
 .main__cards {
     display: flex;
-    border: 2px solid orange;
-    border-radius: 2rem;
 }
 
 .cards__card {
@@ -67,7 +65,131 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4rem 3rem;
+    padding: 4rem 5rem;
     text-align: center;
     background-color: var(--white);
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+
+.main__cards .cards__card:first-child {
+    border-radius: 1.5rem 0 0 1.5rem;
+    margin-right: 1.3rem;
+}
+
+.main__cards .cards__card:last-child {
+    border-radius: 0 1.5rem 1.5rem 0;
+    margin-left: 1.3rem;
+}
+
+.card__title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--price);
+    opacity: 0.7;
+    margin-bottom: 1rem;
+}
+
+.card__price {
+    font-size: 3.5rem;
+    font-weight: bold;
+    opacity: 0.7;
+    padding-bottom: 2rem;
+}
+
+.cards__card p {
+    width: 100%;
+    border-bottom: 1px solid rgba(33, 32, 32, 0.1);
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+.card__quality {
+    border-top: 1px solid rgba(33, 32, 32, 0.1);
+}
+
+.card__btn {
+    width: 100%;
+    margin-top: 3rem;
+    background-color: var(--card-pick);
+    border-radius: 0.5rem;
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 0.6rem;
+}
+
+.cards__card--zoom {
+    background-color: var(--card-pick);
+    border-radius: 1.5rem;
+    transform: scale(1.1);
+}
+
+.main__subs {
+    margin-top: 4rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+/* Estilo del switch */
+.main__subs-extra {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+/* Ocultar el checkbox original */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Estilo del slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(33, 32, 32, 0.3); /* Color de fondo del switch */
+    border-radius: 34px;
+    transition: 0.4s;
+}
+
+/* Bola dentro del slider */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+/* Cambia el background y mueve la bola cuando esté activado */
+input:checked + .slider {
+    background-color: var(
+        --card-pick
+    ); /* Color de fondo cuando está activado */
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px); /* Mueve la bola a la derecha */
 }
