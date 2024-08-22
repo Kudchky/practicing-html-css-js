@@ -1,1 +1,20 @@
+/*Variables*/
+:root {
+    --principal: #404040;
+    --green: ##89CB53;
+    --white: ##FEFEFE;
+    --letter: #282E3C;
+}
+
+/*Globals*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid orange;
+}
 
