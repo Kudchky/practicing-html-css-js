@@ -1,9 +1,9 @@
 /*Variables*/
 :root {
     --principal: #404040;
-    --green: ##89CB53;
-    --white: ##FEFEFE;
-    --letter: #282E3C;
+    --green: #89cb53;
+    --white: #fefefe;
+    --letter: #282e3c;
 }
 
 /*Globals*/
@@ -15,6 +15,24 @@ body {
     width: 100%;
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
-    border: 1px solid orange;
+    background-color: var(--principal);
 }
 
+.layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.layout__title {
+    font-size: 3rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    color: var(--white)
+}
+
+.layout__search {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
