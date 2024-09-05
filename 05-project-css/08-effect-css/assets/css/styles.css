@@ -61,7 +61,11 @@ body {
         transform: translateY(-21rem);
     }
 
-    100% {
+    95% {
         transform: translateY(-21rem);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
