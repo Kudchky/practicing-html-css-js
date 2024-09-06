@@ -65,6 +65,7 @@ body {
     justify-content: center;
     align-items: center;
     border: .8rem solid var(--color-secondary);
+    border-left-color: transparent;
     border-radius: 50%;
 }
 
