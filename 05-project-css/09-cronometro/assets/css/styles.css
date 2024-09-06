@@ -1,0 +1,113 @@
+:root {
+    --color-background: #A8A9CE;
+    --color-principal: #141933;
+    --color-secondary: #99F86E;
+    --color-text-principal: #D5DEFE;
+    --color-text-secondary: #8A8CA0;
+}
+
+/*Globals*/
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 16px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    text-align: center;
+    color: var(--color-principal);
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--color-secondary);
+    cursor: pointer;
+}
+
+.layout {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Main*/
+.layout__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.main__time {
+    width: 35rem;
+    height: 35rem;
+    background-color: var(--color-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 2.5rem;
+}
+
+/*Time*/
+.time__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: .8rem solid var(--color-secondary);
+    border-radius: 50%;
+}
+
+.time__text {
+    color: var(--color-text-principal);
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+.time__panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main__time-type {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 4rem;
+    padding: 1rem;
+    background-color: var(--color-principal);
+}
+
+.time-type__btn {
+    border-radius: 4rem;
+    padding: 1rem 2rem;
+    color: var(--color-text-secondary);
+    background-color: var(--color-principal);
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.time-type__btn:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-principal);
+    border-radius: 4rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
