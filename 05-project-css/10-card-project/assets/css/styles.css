@@ -30,7 +30,7 @@ body {
     width: 60%;
     display: flex;
     box-shadow: 0px 5px 15px 3px var(--color-title);
-    border-radius: 1rem;
+    border-radius: 1rem ;
 }
 
 .card__img {
