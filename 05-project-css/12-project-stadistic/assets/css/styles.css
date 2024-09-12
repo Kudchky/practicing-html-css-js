@@ -1,0 +1,123 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 16px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.layout {
+    width: 100%;
+    height: 100%;
+    background-color: #f5e8d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 50rem;
+}
+
+.header {
+    background-color: #5ed7eb;
+    padding: 3rem;
+    color: white;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.header__title {
+    font-size: 1.4rem;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+.header__text {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.main {
+    background-color: white;
+    border-radius: 1.5rem;
+    padding: 3rem;
+}
+
+.main__title {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+}
+
+.main__barras-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.main__barra-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.main__barra {
+    width: 5.5rem;
+    background-color: #5ed7eb;
+    border-radius: 0.5rem;
+}
+
+.barra-1 {
+    height: 8rem;
+    background-color: rgba(23, 23, 233, 0.655);
+}
+
+.barra-2 {
+    height: 5rem;
+}
+
+.barra-3 {
+    height: 2rem;
+}
+
+.barra-4 {
+    height: 1rem;
+}
+
+.barra-5 {
+    height: 6rem;
+}
+
+.barra-6 {
+    height: 3rem;
+}
+
+.barra-7 {
+    height: 2rem;
+}
+
+.main__age {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #b1adaf;
+}
+
+.main__rango {
+    border: 1px solid #d0cece;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.rango__title {
+    color: #b1adaf;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.rango__text {
+    font-size: 3rem;
+    font-weight: bolder;
+}

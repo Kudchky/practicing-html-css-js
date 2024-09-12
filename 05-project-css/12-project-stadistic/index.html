@@ -3,56 +3,64 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
         <title>Project Statistics</title>
     </head>
     <body>
         <div class="layout">
-            <section class="header">
-                <h2 class="header__title">Rango de edad mas común:</h2>
-                <p class="header__text">De 0 - 18</p>
-            </section>
+            <div class="container">
+                <section class="header">
+                    <h2 class="header__title">Rango de edad mas común:</h2>
+                    <p class="header__text">De 0 - 18</p>
+                </section>
 
-            <main class="main">
-                <h2 class="main__title">Población por rango de edades</h2>
+                <main class="main">
+                    <h2 class="main__title">Población por rango de edades</h2>
 
-                <div class="main__barras-container">
-                    <div class="main__barra-container">
-                        <div class="main__barra"></div>
-                        <p class="main__age">0 - 18</p>
+                    <div class="main__barras-container">
+                        <div class="main__barra-container">
+                            <div class="main__barra barra-1"></div>
+                            <p class="main__age">0 - 18</p>
+                        </div>
+                        <div class="main__barra-container">
+                            <div class="main__barra barra-2"></div>
+                            <p class="main__age">19 - 30</p>
+                        </div>
+                        <div class="main__barra-container">
+                            <div class="main__barra barra-3"></div>
+                            <p class="main__age">31 - 40</p>
+                        </div>
+                        <div class="main__barra-container">
+                            <div class="main__barra barra-4"></div>
+                            <p class="main__age">41 - 50</p>
+                        </div>
+                        <div class="main__barra-container">
+                            <div class="main__barra barra-5"></div>
+                            <p class="main__age">51 - 60</p>
+                        </div>
+                        <div class="main__barra-container">
+                            <div class="main__barra barra-6"></div>
+                            <p class="main__age">61 - 70</p>
+                        </div>
+                        <div class="main__barra-container">
+                            <div class="main__barra barra-7"></div>
+                            <p class="main__age">+70</p>
+                        </div>
                     </div>
-                    <div class="main__barra-container">
-                        <div class="main__barra"></div>
-                        <p class="main__age">19 - 30</p>
-                    </div>
-                    <div class="main__barra-container">
-                        <div class="main__barra"></div>
-                        <p class="main__age">31 - 40</p>
-                    </div>
-                    <div class="main__barra-container">
-                        <div class="main__barra"></div>
-                        <p class="main__age">41 - 50</p>
-                    </div>
-                    <div class="main__barra-container">
-                        <div class="main__barra"></div>
-                        <p class="main__age">51 - 60</p>
-                    </div>
-                    <div class="main__barra-container">
-                        <div class="main__barra"></div>
-                        <p class="main__age">61 - 70</p>
-                    </div>
-                    <div class="main__barra-container">
-                        <div class="main__barra"></div>
-                        <p class="main__age">+70</p>
-                    </div>
-                </div>
 
-                <div class="main__rango">
-                    <h2 class="rango__title">Aumento rango de edad de:</h2>
-                    <p class="rango__text">19 - 30 anos</p>
-                </div>
-            </main>
+                    <div class="main__rango">
+                        <h2 class="rango__title">Aumento rango de edad de:</h2>
+                        <p class="rango__text">19 - 30 anos</p>
+                    </div>
+                </main>
+            </div>
         </div>
     </body>
 </html>
