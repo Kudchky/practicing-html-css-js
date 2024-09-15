@@ -25,7 +25,7 @@ body {
 }
 
 .main {
-    width: 60%;
+    width: 50%;
     background-color: var(--color-main);
     padding: 1.3rem;
     border-radius: 1rem;
@@ -78,7 +78,7 @@ body {
 
 .main__right {
     width: 70%;
-    padding: 2.5rem 15rem;
+    padding: 2.5rem 10rem;
 }
 
 .right__title {
