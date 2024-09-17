@@ -1,0 +1,84 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 16px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.layout {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    padding: 3rem;
+}
+
+.article {
+    position: relative;
+    width: 40rem;
+    height: 40rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.article__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 300ms linear;
+}
+
+.article__overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    background-color: blueviolet;
+    color: white;
+    padding: 3rem;
+    margin-top: 0;
+
+    transform: translateX(-40rem);
+    transition: all 300ms linear;
+}
+
+.article:hover > .article__overlay {
+    transform: translateX(0);
+}
+
+.article__description {
+    font-weight: 500;
+}
+
+.article--2 > .article__overlay {
+    background-color: lightcoral;
+    height: 50%;
+    transform: translateY(40rem);
+}
+
+.article--2:hover > .article__overlay {
+    transform: translateY(20rem);
+}
+
+.article--2:hover > .article__img {
+    transform: translateY(-10rem);
+}
+
+.article--3 > .article__overlay {
+    background-color: lightseagreen;
+    transform: translateY(40rem);
+}
+
+.article--3:hover > .article__overlay {
+    transform: translateY(0);
+}
