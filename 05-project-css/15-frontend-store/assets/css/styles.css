@@ -55,3 +55,35 @@ h3 {font-size: 2.4rem;}
     margin: 3rem 0;
 }
 
+/*Navigation*/
+.nav {
+    background-color: var(--primaryDark);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav__link {
+    font-family: var(--fontPrimary), serif;
+    color: var(--white);
+    font-size: 3rem;
+}
+
+.nav__link--active,
+.nav__link:hover {
+    color: var(--secundary);
+}
+
+/*Footer*/
+.footer {
+    background-color: var(--primaryDark);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer__text {
+    font-family: var(--fontPrimary), serif;
+    text-align: center;
+    font-size: 2.2rem
+}
