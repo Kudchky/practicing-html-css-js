@@ -17,7 +17,6 @@ html {
 body {
     background-color: var(--primary);
     font-size: 1.6rem;
-    line-height: 1.5;
 }
 
 p {
@@ -86,4 +85,25 @@ h3 {font-size: 2.4rem;}
     font-family: var(--fontPrimary), serif;
     text-align: center;
     font-size: 2.2rem
+}
+
+/*Products*/
+.product {
+
+}
+
+.product__img {
+
+}
+
+.product__info {
+
+}
+
+.product__name {
+
+}
+
+.product__price {
+
 }
